@@ -15,6 +15,13 @@ export interface PackageInfo extends PackageMeta {
   sectionCount: number;
 }
 
+/** Create a filesystem-safe filename for an installed package database. */
+export function getPackageFileName(name: string, version: string): string {
+  const safeName = name.replaceAll("/", "__");
+  const safeVersion = version.replaceAll("/", "__");
+  return `${safeName}@${safeVersion}.db`;
+}
+
 /**
  * Registry of documentation packages.
  * Manages an in-memory list of packages without file system operations.
