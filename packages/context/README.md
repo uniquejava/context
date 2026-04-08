@@ -29,6 +29,8 @@ The fix isn't better prompting. It's giving your AI the right docs.
 
 Context is an MCP server backed by a [community-driven package registry](registry/) with **100+ popular libraries** already built and ready to use. When your AI agent needs documentation, it searches the registry, downloads the right package, and queries it locally — all automatically.
 
+👉🏻 [Context 工作原理 - 本地搜索和 Chunk 机制!!!](./README_cn.md)
+
 **Install once. Configure once. Then just ask your AI.**
 
 <p align="center">
